@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel - Discover Best Places</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', sans-serif; }
+body { background:#fffaf5; color:#222; }
+header { display:flex; justify-content:space-between; align-items:center; padding:15px 8%; background:white; }
+header .logo { font-weight:700; }
+header nav a { margin:0 10px; text-decoration:none; color:#333; font-size:14px; }
+.btn-orange { background:#ff7a45; color:white; padding:8px 18px; border-radius:20px; border:none; }
+
+.hero { display:flex; align-items:center; justify-content:space-between; padding:50px 8%; background:white; flex-wrap:wrap; }
+.hero-text h1 { font-size:38px; line-height:1.2; margin-bottom:15px; }
+.hero-text p { color:#777; font-size:14px; margin-bottom:20px; }
+.search-box { display:flex; gap:10px; background:#f5f5f5; padding:8px; border-radius:30px; width:fit-content; }
+.search-box input { border:none; background:transparent; padding:5px 15px; outline:none; }
+.search-box button { background:#ff7a45; border:none; color:white; border-radius:50%; width:35px; height:35px; }
+.hero-img { position:relative; }
+.hero-img .circle { width:280px; height:280px; background:#ffde59; border-radius:50%; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+.hero-img img { width:100%; height:100%; object-fit:cover; }
+
+.section { padding:40px 8%; }
+.section h2 { font-size:20px; margin-bottom:5px; }
+.section .sub { font-size:12px; color:#888; margin-bottom:20px; }
+
+/* Categories */
+.categories { display:flex; gap:15px; overflow-x:auto; }
+.cat { text-align:center; min-width:70px; }
+.cat .img { width:70px; height:90px; border-radius:35px; overflow:hidden; }
+.cat .img img { width:100%; height:100%; object-fit:cover; }
+.cat p { font-size:12px; margin-top:6px; }
+
+/* Stories */
+.stories { display:flex; align-items:center; gap:30px; flex-wrap:wrap; background:white; border-radius:15px; padding:20px; }
+.stories .circle-img { width:180px; height:180px; background:#ffde59; border-radius:50%; overflow:hidden; }
+.stats { display:flex; gap:15px; margin-top:15px; }
+.stat { background:#fff5f0; padding:10px 15px; border-radius:10px; text-align:center; }
+.stat b { color:#ff7a45; }
+
+/* Popular */
+.popular { display:flex; gap:15px; overflow-x:auto; }
+.card { min-width:200px; background:white; border-radius:15px; overflow:hidden; box-shadow:0 2px 10px rgba(0,0,0,0.05); }
+.card img { width:100%; height:130px; object-fit:cover; }
+.card .info { padding:10px; }
+.card .info p { font-size:12px; font-weight:600; }
+.card .price { font-size:11px; color:#888; }
+
+/* Top Destination */
+.top-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(120px,1fr)); gap:12px; }
+.top-grid img { width:100%; height:100px; object-fit:cover; border-radius:12px; }
+
+/* Responsive */
+@media(max-width:768px){
+  .hero { flex-direction:column; text-align:center; }
+  .search-box { margin:0 auto; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Safy</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About us</a>
+    <a href="#">Destinations</a>
+    <a href="#">Tours</a>
+  </nav>
+  <button class="btn-orange">Book Now</button>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Discover the <br>Best Lovely <br>Places</h1>
+    <p>Plan and book your perfect trip with expert advice, travel <br>tips, destination information and inspiration from us.</p>
+    <div class="search-box">
+      <input type="text" placeholder="Where">
+      <input type="text" placeholder="Date">
+      <button>→</button>
+    </div>
+  </div>
+  <div class="hero-img">
+    <div class="circle">
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Categories</h2>
+  <p class="sub">Here are lots of interesting destinations to visit</p>
+  <div class="categories">
+    <div class="cat"><div class="img"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=200"></div><p>Beach</p></div>
+    <div class="cat"><div class="img"><img src="https://images.unsplash.com/photo-1682686580391-615b1f28e5d7?w=200"></div><p>Desert</p></div>
+    <div class="cat"><div class="img"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=200"></div><p>Mountain</p></div>
+    <div class="cat"><div class="img"><img src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=200"></div><p>Temple</p></div>
+    <div class="cat"><div class="img"><img src="https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?w=200"></div><p>Tower</p></div>
+    <div class="cat"><div class="img"><img src="https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?w=200"></div><p>Pyramid</p></div>
+  </div>
+</section>
+
+<section class="section stories">
+  <div class="circle-img"><img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=300" style="width:100%;height:100%;object-fit:cover;"></div>
+  <div>
+    <h2>Our Stories Have <br>Adventures</h2>
+    <p class="sub">We are experienced in bringing adventurers to start their journey</p>
+    <div class="stats">
+      <div class="stat"><b>12K+</b><br><span style="font-size:10px">Success Journey</span></div>
+      <div class="stat"><b>16+</b><br><span style="font-size:10px">Awards Winning</span></div>
+      <div class="stat"><b>20+</b><br><span style="font-size:10px">Years Experience</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Find Popular <br>Destination</h2>
+  <div class="popular">
+    <div class="card"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=300"><div class="info"><p>Mountain Hiking Tour</p><span class="price">$89 / Person</span></div></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=300"><div class="info"><p>Machu Picchu, Peru</p><span class="price">$99 / Person</span></div></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1501554728187-ce583db33af7?w=300"><div class="info"><p>The Grand Canyon, Arizona</p><span class="price">$70 / Person</span></div></div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 style="text-align:center;">Top Destinations</h2>
+  <div class="top-grid">
+    <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=200">
+    <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=200">
+    <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=200">
+    <img src="https://images.unsplash.com/photo-1476514525535-07fb6b4ae8f1?w=200">
+    <img src="https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?w=200">
+    <img src="https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=200">
+  </div>
+</section>
+
+</body>
+</html>

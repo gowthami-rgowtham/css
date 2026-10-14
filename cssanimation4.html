@@ -1,0 +1,40 @@
+<style>
+    h2 
+    {
+        width: 350px;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        background-color: red;
+    }
+    #f1
+    {
+        animation-fill-mode: forwards;
+    }
+    #f2
+    {
+        animation-fill-mode: backwards;
+    }
+    #f3
+    {
+        animation-fill-mode: both;
+    }
+    @keyframes example
+    {
+        from
+        {
+            margin-left: 60%;
+            background-color: red;
+        }
+        to 
+        {
+            margin-left: 0%;
+            background-color: yellow;
+        }
+    }
+</style>
+<body>
+    <h2 id="f1">forwards</h2>
+    <h2 id="f2">backwards</h2>
+    <h2 id="f3">both</h2>
+</body>

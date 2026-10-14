@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Design System</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<style>
+
+body{
+    background:#f3f3f3;
+    font-family:Arial, sans-serif;
+    color:#263238;
+}
+
+/* Main Page */
+
+.design-page{
+    max-width:1200px;
+    margin:40px auto;
+}
+
+/* Common Card */
+
+.design-card{
+    background:white;
+    padding:45px 55px;
+    margin-bottom:35px;
+    min-height:350px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:45px;
+}
+
+.sub-title{
+    color:#2185b5;
+    font-size:15px;
+    font-weight:600;
+}
+
+/* Colors */
+
+.color-box{
+    width:55px;
+    height:55px;
+    border-radius:4px;
+    display:inline-block;
+    margin-right:15px;
+    margin-bottom:8px;
+}
+
+.color-name{
+    font-size:10px;
+    color:#777;
+    text-align:center;
+    width:55px;
+    display:inline-block;
+    margin-right:15px;
+}
+
+/* Typography */
+
+.headline1{
+    font-size:38px;
+    font-weight:600;
+}
+
+.headline2{
+    font-size:28px;
+    font-weight:600;
+}
+
+.headline3{
+    font-size:22px;
+    font-weight:600;
+}
+
+.headline4{
+    font-size:18px;
+    font-weight:600;
+}
+
+.body-text{
+    font-size:15px;
+    margin:6px 0;
+}
+
+/* Buttons */
+
+.demo-btn{
+    min-width:100px;
+    margin:5px;
+    border-radius:3px;
+    font-size:13px;
+}
+
+.btn-primary-custom{
+    background:#42a950;
+    border-color:#42a950;
+}
+
+.btn-primary-custom:hover{
+    background:#358c42;
+}
+
+.btn-outline-custom{
+    color:#42a950;
+    border:1px solid #b9d9bd;
+    background:white;
+}
+
+/* Icon buttons */
+
+.icon-btn{
+    width:42px;
+    height:42px;
+    padding:0;
+    margin:5px;
+    border-radius:4px;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Links */
+
+.demo-link{
+    color:#42a950;
+    text-decoration:none;
+    margin:12px;
+    font-size:14px;
+}
+
+.demo-link:hover{
+    text-decoration:underline;
+}
+
+/* Shadows */
+
+.shadow-box{
+    height:100px;
+    background:white;
+    border-radius:4px;
+    margin:10px;
+}
+
+/* Footer */
+
+.footer{
+    background:white;
+    padding:35px 60px;
+    margin-top:35px;
+}
+
+.footer-logo{
+    font-size:18px;
+    font-weight:bold;
+}
+
+.footer a{
+    color:#444;
+    text-decoration:none;
+    margin:0 10px;
+    font-size:13px;
+}
+
+.footer .get-demo{
+    background:#42a950;
+    color:white;
+    padding:9px 18px;
+    border-radius:4px;
+}
+
+/* Spacing */
+
+.spacing-box{
+    background:#ddd;
+    height:24px;
+    margin-bottom:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid design-page">
+
+<!-- ================= COLORS ================= -->
+
+<div class="design-card">
+
+<h2 class="section-title">Colors</h2>
+
+<div class="row">
+
+<div class="col-md-2">
+<h6 class="sub-title">Neutral</h6>
+</div>
+
+<div class="col-md-10">
+
+<div class="d-flex flex-wrap align-items-start">
+
+<div>
+<span class="color-box" style="background:#263238;"></span>
+<div class="color-name">Black</div>
+</div>
+
+<div>
+<span class="color-box" style="background:#424242;"></span>
+<div class="color-name">Dark Gray</div>
+</div>
+
+<div>
+<span class="color-box" style="background:#707070;"></span>
+<div class="color-name">Gray</div>
+</div>
+
+<div>
+<span class="color-box" style="background:#8d99a6;"></span>
+<div class="color-name">Gray</div>
+</div>
+
+<div>
+<span class="color-box" style="background:#aebfd0;"></span>
+<div class="color-name">Gray Blue</div>
+</div>
+
+<div>
+<span class="color-box" style="background:#f1f3f8;"></span>
+<div class="color-name">White</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<hr>
+
+<div class="row">
+
+<div class="col-md-2">
+<h6 class="sub-title">Primary</h6>
+</div>
+
+<div class="col-md-10">
+
+<span class="color-box" style="background:#42a950;"></span>
+
+<span class="color-box" style="background:#263238;"></span>
+
+<span class="color-box" style="background:#2196f3;"></span>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="row">
+
+<div class="col-md-2">
+<h6 class="sub-title">Color Shade</h6>
+</div>
+
+<div class="col-md-10">
+
+<span class="color-box" style="background:#42a950;"></span>
+<span class="color-box" style="background:#399544;"></span>
+<span class="color-box" style="background:#2d8439;"></span>
+<span class="color-box" style="background:#206d2c;"></span>
+<span class="color-box" style="background:#145c22;"></span>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="row">
+
+<div class="col-md-2">
+<h6 class="sub-title">Color Tint</h6>
+</div>
+
+<div class="col-md-10">
+
+<span class="color-box" style="background:#6cbe73;"></span>
+<span class="color-box" style="background:#8bcf91;"></span>
+<span class="color-box" style="background:#a9dcb0;"></span>
+<span class="color-box" style="background:#c9e8cd;"></span>
+<span class="color-box" style="background:#e5f3e7;"></span>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="row">
+
+<div class="col-md-2">
+<h6 class="sub-title">Action</h6>
+</div>
+
+<div class="col-md-10">
+
+<span class="color-box" style="background:#fbc02d;"></span>
+<span class="color-box" style="background:#e53935;"></span>
+<span class="color-box" style="background:#2e7d32;"></span>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ================= TYPOGRAPHY ================= -->
+
+<div class="design-card">
+
+<h2 class="section-title">Typography</h2>
+
+<div class="row">
+
+<div class="col-md-3">
+<h6 class="sub-title">Headlines</h6>
+</div>
+
+<div class="col-md-9">
+
+<p>Header</p>
+
+<div class="headline1">Headline 1</div>
+<small>Semi Bold, 64/76</small>
+
+<div class="headline2">Headline 2</div>
+<small>Semi Bold, 36/44</small>
+
+<div class="headline3">Headline 3</div>
+<small>Semi Bold, 28/36</small>
+
+<div class="headline4">Headline 4</div>
+<small>Semi Bold, 20/28</small>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="row mt-4">
+
+<div class="col-md-3">
+<h6 class="sub-title">Body</h6>
+</div>
+
+<div class="col-md-4">
+
+<strong>Regular</strong>
+
+<p class="body-text">Body 1</p>
+<p class="body-text">Body 2</p>
+<p class="body-text">Body 3</p>
+<p class="body-text">Body 4</p>
+
+</div>
+
+<div class="col-md-4">
+
+<strong>Medium</strong>
+
+<p class="body-text">Body 1</p>
+<p class="body-text">Body 2</p>
+<p class="body-text">Body 3</p>
+<p class="body-text">Body 4</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ================= BUTTONS ================= -->
+
+<div class="design-card">
+
+<h2 class="section-title">Buttons</h2>
+
+<h6 class="sub-title mb-3">Standard Buttons</h6>
+
+<div class="table-responsive">
+
+<table class="table align-middle">
+
+<thead>
+<tr>
+<th>Size</th>
+<th>Default</th>
+<th>Hover</th>
+<th>Focus</th>
+<th>Click</th>
+<th>Loading</th>
+<th>Disabled</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Normal</td>
+
+<td>
+<button class="btn btn-primary-custom text-white demo-btn">
+Label
+</button>
+</td>
+
+<td>
+<button class="btn btn-primary-custom text-white demo-btn">
+Label
+</button>
+</td>
+
+<td>
+<button class="btn btn-primary-custom text-white demo-btn shadow">
+Label
+</button>
+</td>
+
+<td>
+<button class="btn btn-success demo-btn">
+Label →
+</button>
+</td>
+
+<td>
+<button class="btn btn-primary-custom text-white demo-btn">
+Label <span class="spinner-border spinner-border-sm"></span>
+</button>
+</td>
+
+<td>
+<button class="btn btn-secondary demo-btn" disabled>
+Label
+</button>
+</td>
+
+</tr>
+
+<tr>
+
+<td>Medium</td>
+
+<td>
+<button class="btn btn-primary-custom text-white demo-btn">
+Label
+</button>
+</td>
+
+<td>
+<button class="btn btn-primary-custom text-white demo-btn">
+Label
+</button>
+</td>
+
+<td>
+<button class="btn btn-primary-custom text-white demo-btn">
+Label
+</button>
+</td>
+
+<td>
+<button class="btn btn-primary-custom text-white demo-btn">
+Label →
+</button>
+</td>
+
+<td>
+<button class="btn btn-primary-custom text-white demo-btn">
+Label
+</button>
+</td>
+
+<td>
+<button class="btn btn-secondary demo-btn" disabled>
+Label
+</button>
+</td>
+
+</tr>
+
+<tr>
+
+<td>Small</td>
+
+<td>
+<button class="btn btn-sm btn-primary-custom text-white demo-btn">
+Label
+</button>
+</td>
+
+<td>
+<button class="btn btn-sm btn-primary-custom text-white demo-btn">
+Label
+</button>
+</td>
+
+<td>
+<button class="btn btn-sm btn-primary-custom text-white demo-btn">
+Label
+</button>
+</td>
+
+<td>
+<button class="btn btn-sm btn-primary-custom text-white demo-btn">
+Label →
+</button>
+</td>
+
+<td>
+<button class="btn btn-sm btn-primary-custom text-white demo-btn">
+Label
+</button>
+</td>
+
+<td>
+<button class="btn btn-sm btn-secondary demo-btn" disabled>
+Label
+</button>
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<!-- SECONDARY BUTTON -->
+
+<h6 class="sub-title mt-5 mb-3">Secondary</h6>
+
+<button class="btn btn-outline-custom demo-btn">
+Label
+</button>
+
+<button class="btn btn-outline-custom demo-btn">
+Label →
+</button>
+
+<button class="btn btn-outline-custom demo-btn">
++ Label
+</button>
+
+
+<!-- ICON BUTTON -->
+
+<h6 class="sub-title mt-5 mb-3">Icon Buttons</h6>
+
+<button class="btn btn-primary-custom text-white icon-btn">
+<i class="bi bi-search"></i>
+</button>
+
+<button class="btn btn-primary-custom text-white icon-btn">
+<i class="bi bi-plus"></i>
+</button>
+
+<button class="btn btn-primary-custom text-white icon-btn">
+<i class="bi bi-arrow-right"></i>
+</button>
+
+<button class="btn btn-outline-custom icon-btn">
+<i class="bi bi-search"></i>
+</button>
+
+</div>
+
+
+<!-- ================= LINKS ================= -->
+
+<div class="design-card">
+
+<h2 class="section-title">Link</h2>
+
+<div class="row">
+
+<div class="col-md-3">
+<h6 class="sub-title">Normal</h6>
+</div>
+
+<div class="col-md-9">
+
+<a href="#" class="demo-link">Label</a>
+<a href="#" class="demo-link">Label</a>
+<a href="#" class="demo-link">Label</a>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="row">
+
+<div class="col-md-3">
+<h6 class="sub-title">Medium</h6>
+</div>
+
+<div class="col-md-9">
+
+<a href="#" class="demo-link fw-semibold">Label</a>
+<a href="#" class="demo-link fw-semibold">Label</a>
+<a href="#" class="demo-link fw-semibold">Label</a>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="row">
+
+<div class="col-md-3">
+<h6 class="sub-title">Small</h6>
+</div>
+
+<div class="col-md-9">
+
+<a href="#" class="demo-link small">Label</a>
+<a href="#" class="demo-link small">Label</a>
+<a href="#" class="demo-link small">Label</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ================= EFFECTS ================= -->
+
+<div class="design-card">
+
+<h2 class="section-title">Effects</h2>
+
+<div class="row">
+
+<div class="col-md-2">
+<h6 class="sub-title">Shadows</h6>
+</div>
+
+<div class="col-md-2">
+<div class="shadow-box shadow-sm"></div>
+<small>2px</small>
+</div>
+
+<div class="col-md-2">
+<div class="shadow-box shadow"></div>
+<small>4px</small>
+</div>
+
+<div class="col-md-2">
+<div class="shadow-box" style="box-shadow:0 6px 15px rgba(0,0,0,.15);"></div>
+<small>8px</small>
+</div>
+
+<div class="col-md-2">
+<div class="shadow-box" style="box-shadow:0 8px 20px rgba(0,0,0,.18);"></div>
+<small>12px</small>
+</div>
+
+<div class="col-md-2">
+<div class="shadow-box" style="box-shadow:0 10px 25px rgba(0,0,0,.2);"></div>
+<small>16px</small>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ================= ICONS ================= -->
+
+<div class="design-card">
+
+<h2 class="section-title">Icons</h2>
+
+<div class="row">
+
+<div class="col-md-3">
+<h6 class="sub-title">Arrows & Directions</h6>
+</div>
+
+<div class="col-md-9">
+
+<div class="fs-5">
+
+<i class="bi bi-arrow-up m-2"></i>
+<i class="bi bi-arrow-down m-2"></i>
+<i class="bi bi-arrow-left m-2"></i>
+<i class="bi bi-arrow-right m-2"></i>
+<i class="bi bi-chevron-up m-2"></i>
+<i class="bi bi-chevron-down m-2"></i>
+<i class="bi bi-chevron-left m-2"></i>
+<i class="bi bi-chevron-right m-2"></i>
+<i class="bi bi-arrow-up-right m-2"></i>
+<i class="bi bi-arrow-down-right m-2"></i>
+
+</div>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="row mt-4">
+
+<div class="col-md-3">
+<h6 class="sub-title">User Interface</h6>
+</div>
+
+<div class="col-md-9">
+
+<div class="fs-5">
+
+<i class="bi bi-house m-2"></i>
+<i class="bi bi-search m-2"></i>
+<i class="bi bi-person m-2"></i>
+<i class="bi bi-heart m-2"></i>
+<i class="bi bi-star m-2"></i>
+<i class="bi bi-gear m-2"></i>
+<i class="bi bi-bell m-2"></i>
+<i class="bi bi-calendar m-2"></i>
+<i class="bi bi-envelope m-2"></i>
+<i class="bi bi-cart m-2"></i>
+<i class="bi bi-check m-2"></i>
+<i class="bi bi-x m-2"></i>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ================= SPACING ================= -->
+
+<div class="design-card">
+
+<h2 class="section-title">Spacing</h2>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<p>144px</p>
+<div class="spacing-box" style="width:144px;"></div>
+
+<p>24px</p>
+<div class="spacing-box" style="width:24px;"></div>
+
+</div>
+
+<div class="col-md-6">
+
+<p>Grid spacing</p>
+
+<div class="d-flex gap-3">
+
+<div class="spacing-box" style="width:40px;"></div>
+<div class="spacing-box" style="width:40px;"></div>
+<div class="spacing-box" style="width:40px;"></div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+<div class="row align-items-center">
+
+<div class="col-md-3">
+
+<div class="footer-logo">
+✦ JustGo...
+</div>
+
+</div>
+
+<div class="col-md-6 text-center">
+
+<a href="#">Why JustGo?</a>
+<a href="#">Features</a>
+<a href="#">Community</a>
+<a href="#">JustGo Blog</a>
+<a href="#">Pricing</a>
+
+</div>
+
+<div class="col-md-3 text-end">
+
+<a href="#" class="get-demo">
+Get a Demo →
+</a>
+
+</div>
+
+</div>
+
+</footer>
+
+</div>
+
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

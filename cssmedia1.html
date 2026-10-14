@@ -1,0 +1,39 @@
+<style>
+    body
+    {
+        background-color: pink;
+        text-align: center;
+        padding: 20px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .container div{
+        background-color: lightblue;
+        padding: 30px;
+        width: 100px;
+    }
+    @media screen and (max-width:800px)
+    {
+        h1
+        {
+            background-color: green;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .container{
+            flex-direction: column;
+        }
+    }
+</style>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam debitis repudiandae suscipit, quasi distinctio recusandae ullam officiis perferendis quia unde cum, ad earum illum, quisquam alias fugit delectus rerum dolorem.</h1>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+

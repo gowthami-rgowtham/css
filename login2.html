@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>login form</title>
+        <style>
+            .login-container{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                gap: 10px;
+            }
+            input{
+                padding: 8px;
+            }
+            @media screen and(max-width:800px)
+            {
+            .login-container{
+                flex-direction: column;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <h2>login</h2>
+        <form>
+            <label>username:</label>
+            <input type="text"name="username">
+            <label>password</label>
+            <input type="password"name="password">
+            <input type="submit"value="login">
+        </form>
+    </body>
+</html>
